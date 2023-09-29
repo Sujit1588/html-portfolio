@@ -1,0 +1,136 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.main{
+    
+    background: url("photo.jpg");
+    height: 100vh;
+    background-size: cover;
+}
+#check{
+    display: none;
+}
+.sidebar{
+    width: 300px;
+    height: 100vh;
+    position: fixed;
+    left: -350px;
+    transition: linear;
+    transition-duration: 0.3s;
+    background-color: rgba(37, 35, 35, 0.2);
+    box-shadow: rgb(37, 35, 35) 1px 1px 1px;
+    
+}
+.btn-one{
+    color: white;
+    font-size: 30px;
+    font-weight: 700;
+    position: absolute;
+    left: 16px; 
+    opacity: 0.5;
+}
+.sidebar .logo{
+    width: 100%;
+    line-height: 60px; 
+    height: 80px;
+   
+ box-shadow: 0 0 4px rgba(255, 255, 255, 0.8);
+   
+ 
+
+}
+
+.sidebar .logo a {
+    position: absolute; 
+    font-size: 30px;
+    left: 20px;  
+    text-decoration: none;
+    font-weight: 600;
+    color: white;
+}
+.btn-two  i{
+    color: rgb(105, 101, 101);
+    font-size: 25px;
+    line-height: 60px;
+    font-weight: 700;
+    position: absolute;
+    left: 270px;
+    cursor: pointer;
+    /* opacity: 0; */
+   
+   
+}
+.sidebar .menu{
+    position: absolute;
+    width: 100%;
+    top: 75px;
+}
+.sidebar .menu li{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    list-style-type: none;
+    width: 100%;
+    margin-top: 6px;
+
+
+}
+.sidebar .menu a{
+    text-decoration: none;
+    color: white;
+    width: 100%;
+    font-size: 20px;
+    cursor: pointer;
+}
+.sidebar .menu i{
+    color: white;
+    padding-right: 10px;
+    padding-left: 15px;
+}
+
+
+
+
+.sidebar .social{
+
+    position: absolute;
+    left: 25%;
+    bottom: 50px;
+}
+.sidebar .social i{
+    color: white;
+    opacity: 0.5;
+    padding-right: 10px;
+
+}
+
+#check:checked ~ .sidebar{
+    left: 0px;
+
+
+}
+#check:checked ~ .btn-one{ 
+    opacity: 0;
+   
+
+
+}
+#check:checked ~.sidebar.btn-two i {
+    opacity: 1; 
+}
+
+
+.social i:hover{
+    transform: scale(1.2);
+    opacity: 1;
+
+}
+.sidebar .menu li:hover {
+        box-shadow:rgba(255, 255, 255, 0.7) 0 0 4px;
+}
+
+.sidebar .logo span{
+    padding-right: 10px;
+    font-size: 40px;
+    padding-top: 20px;
+}
